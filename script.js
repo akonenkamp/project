@@ -14,9 +14,14 @@ var exercise = [
 ];
 
 
-function validate {
-  var choice1  = document.getElementById("burpee").checked;
-  var choice2 = document.getElementById("squat").checked;
-  var choice3 = document.getElementById("pushup").checked;
-  var choice4 = document.getElementById("run").checked;
+function changeText(){
+var userInputname = document.getElementById('name').value;
+var userInputcolor = Array.prototype.slice.call(document.querySelectorAll(".move:checked")).map(function(el) {
+        return el.value;
+    }).join(', ')
+    
+document.getElementById('output1').innerHTML = userInputname;
+document.getElementById('output2').innerHTML = userInputcolor;
+return false;
+  
 }

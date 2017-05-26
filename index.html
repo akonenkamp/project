@@ -17,17 +17,25 @@
    </h5>
 
   
-  <form id="generator" onsubmit="return validate()">
-    <input type="checkbox" name="burpee" value="burpee">Burpee
-    <input type="checkbox" name="squat" value="squat">Squat
-    <input type="checkbox" name="pushup" value="pushup">Push-Up
-    <input type="checkbox" name="run" value="run">Run
-    <button>submit</button>
-  </form>
-  <br>
-  Your Workout:<p id="makeworkout"></p>
+  <form method="get" onsubmit="return changeText()">
+    <input type="checkbox" name="move" value="burpee">Burpee
+    <input type="checkbox" name="move" value="squat">Squat
+    <input type="checkbox" name="move" value="pushup">Push-Up
+    
+    <input type="checkbox" name="move" value="run">Run
+    
+    <br><br>
+    <input type="submit" value="Output" />
+<!--    <input type="button" onclick="myFunction()" value="Get Moving">-->
+    </form>
   
   
+    <br>
+    Your Workout:<p id="makeworkout"></p>
+  
+  
+    <b id='output1'></b><br />
+    <b id='output2'></b><br />
 
   
  
