@@ -9,6 +9,7 @@
 
   
   
+<!--
   
 <body>
    <h1>WOD Generator</h1>
@@ -26,7 +27,7 @@
     
     <br><br>
     <input type="submit" value="Output" />
-<!--    <input type="button" onclick="myFunction()" value="Get Moving">-->
+    <input type="button" onclick="myFunction()" value="Get Moving">
     </form>
   
   
@@ -44,3 +45,34 @@
 </body>
   
 </html>
+
+
+
+
+
+// new HTML
+-->
+
+<script>function changeText(){
+
+var userInputcolor = Array.prototype.slice.call(document.querySelectorAll(".move:checked")).map(function(el) {
+        return el.value;
+    }).join(', ')
+    
+document.getElementById('output2').innerHTML = userInputcolor;
+return false;
+}
+</script>
+
+<form method="get" onsubmit="return changeText()">        
+      
+<br /><br />
+<input type="checkbox" name="exercise" class="move" value="squat">SQT<br />
+<input type="checkbox" name="exercise" class="move" value="burpee">Burpee<br />
+<input type="checkbox" name="exercise" class="move" value="pushup">Push Up<br />
+<input type="checkbox" name="exercise" class="move" value="situp">Sit Up<br />
+<br /><br />
+<input type="submit" value="Output" />
+<br /><br />
+
+<b id='output2'></b><br />
