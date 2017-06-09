@@ -3,76 +3,39 @@
   <head>
   <link rel="stylesheet"
         href="stylesheet.css">
+  
     
   <title>WOD Generator</title>
   </head>
 
   
   
-<!--
-  
 <body>
    <h1>WOD Generator</h1>
    <h2>Plan your next workout of the day!</h2>
    <h5>We know how difficult it can be to come up with your own constantly varied workouts! We make it easy with our Workout of The Day Generator.
-   </h5>
-
+  </h5>
   
-  <form method="get" onsubmit="return changeText()">
-    <input type="checkbox" name="move" value="burpee">Burpee
-    <input type="checkbox" name="move" value="squat">Squat
-    <input type="checkbox" name="move" value="pushup">Push-Up
-    
-    <input type="checkbox" name="move" value="run">Run
-    
-    <br><br>
-    <input type="submit" value="Output" />
-    <input type="button" onclick="myFunction()" value="Get Moving">
-    </form>
-  
-  
-    <br>
-    Your Workout:<p id="makeworkout"></p>
-  
-  
-    <b id='output1'></b><br />
-    <b id='output2'></b><br />
-
-  
- 
-  
-  
-</body>
-  
-</html>
-
-
-
-
-
-// new HTML
--->
-
-<script>function changeText(){
-
-var userInputcolor = Array.prototype.slice.call(document.querySelectorAll(".move:checked")).map(function(el) {
-        return el.value;
-    }).join(', ')
-    
-document.getElementById('output2').innerHTML = userInputcolor;
-return false;
-}
-</script>
-
 <form method="get" onsubmit="return changeText()">        
       
-<br /><br />
 <input type="checkbox" name="exercise" class="move" value="squat">SQT<br />
 <input type="checkbox" name="exercise" class="move" value="burpee">Burpee<br />
-<input type="checkbox" name="exercise" class="move" value="pushup">Push Up<br />
-<input type="checkbox" name="exercise" class="move" value="situp">Sit Up<br />
+<input type="checkbox" name="exercise" class="move" value="pushup">PushUp<br />
+<input type="checkbox" name="exercise" class="move" value="situp">SitUp<br />
 <br /><br />
 <input type="submit" value="Output" />
 <br /><br />
 
 <b id='output2'></b><br />
+</form>
+  
+</body>
+<footer>
+<script type="text/javascript" src="script.js">
+</script>  
+</footer>
+  
+</html>
+
+
+
