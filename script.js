@@ -8,3 +8,13 @@ var userInputcolor = Array.prototype.slice.call(document.querySelectorAll(".move
 document.getElementById('output2').innerHTML = userInputcolor;
 return false;
 }
+
+
+function random() {
+ var generateNumber =
+ Array.prototype.slice.call(document.querySelectorAll(".move:checked")).map(function(el) {
+     Math.floor(Math.random()*1001);
+     document.getElementById('output2').innerHTML = generateNumber;
+     return false;
+ 
+}
