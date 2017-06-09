@@ -1,19 +1,15 @@
 
 function changeText(){
-
-var userInputcolor = Array.prototype.slice.call(document.querySelectorAll(".move:checked")).map(function(el) {
-        return el.value;
+  var userInputcolor = Array.prototype.slice.call(
+    document.querySelectorAll(".move:checked")).map(function(el) {
+          return el.value;
     }).join(', ')
-    
-document.getElementById('output2').innerHTML = userInputcolor;
-return false;
+
+  document.getElementById('output2').innerHTML = random() + " " + userInputcolor;
+  return false;
 }
 
 
-//function random {
-// var generateNumber =
-//     Math.floor(Math.random()*1001);
-//     document.getElementById('output2').innerHTML = generateNumber;
-//     return false;
-// 
-//}
+function random () {
+ return Math.floor(Math.random()*100);
+}
